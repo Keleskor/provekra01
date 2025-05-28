@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Squada+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="modle-windon-bg" id="modle-windon">
+
+        <form action="" method="post">
+        <div class="modle-windon montserrat">
+
+
+            <div class="font-size-48">
+                    <div class="btl-close">
+                         <svg width="31" height="31" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.08333 40.8333L0 36.75L16.3333 20.4167L0 4.08333L4.08333 0L20.4167 16.3333L36.75 0L40.8333 4.08333L24.5 20.4167L40.8333 36.75L36.75 40.8333L20.4167 24.5L4.08333 40.8333Z" fill="#382E2E"/>
+                    </svg>
+                    </div>
+                   
+
+                <h5>Login to your account</h5>
+            </div>  
+            
+
+            <div>
+                 <p class="montserrat">
+                    e-mail
+                </p>
+                <input name="email" type="email">
+            </div>
+
+            <div>
+                <p>password</p> 
+                <input class="password" type="password" name="password" id="">
+            </div>
+
+            <div>
+                <button type="submit" class="btn-chekc montserrat">
+                      Loging now
+                </button>
+            </div>
+            
+            <div>
+                <p class="font-size-32">
+                      dont have an account ? <a href="#"> <b>Sign up </b> </a>
+                </p>
+              
+            </div>
+
+        </div>
+
+        </form>
+  
+
+    </div>
+
+          <div class="modle-windon-close">
+
+        </div>
+    
+    <header class="header-menu">
+        <div>
+        
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 30V26.6667H35V30H5ZM5 21.6667V18.3333H35V21.6667H5ZM5 13.3333V10H35V13.3333H5Z" fill="black"/>
+            </svg>
+
+        </div>
+
+        <div>
+            <h3 class="squada-one-regular font-size-48">
+                Jagermeister 
+            </h3>
+        </div>
+        
+        <div class="btn-request montserrat">
+            <button>
+                <p class="montserrat font-size-24"> Регистарация</p>
+            </button>
+
+            <button>
+                <p class="montserrat font-size-24">Вход</p>
+            </button>
+        </div>
+
+    </header>
+
+    <div class="jagermeister">
+        <img src="./img/img_jagermeister.png" alt="" srcset="">
+    </div>
+
+
+</body>
+
+    <script>
+
+        const btnRequest = document.getElementsByClassName("btn-request");
+        const modleWindon = document.getElementsByClassName("modle-windon-bg");
+        const modleWindonClose = document.getElementsByClassName("modle-windon-close");
+        const btl_close = document.getElementsByClassName("btl-close");
+        let isShowModle = false;
+
+        function closeModleWindon() {
+              modleWindon[0].style.display = "none";
+            modleWindonClose[0].style.display = "none";
+        }
+
+
+        btnRequest[0].addEventListener("click", () => {
+            modleWindon[0].style.display = "block";
+             modleWindonClose[0].style.display = "block";
+            isShowModle = true;
+        });
+
+        modleWindonClose[0].addEventListener("click", closeModleWindon);
+        btl_close[0].addEventListener("click", closeModleWindon);
+       
+    </script>
+
+
+</html>
